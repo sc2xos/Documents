@@ -20,3 +20,17 @@ python -m pip install tensorflow-metal
 ```Bash
 python -c 'import tensorflow; print(tensorflow.__version__)'
 ```
+
+## Miniforgeのアンインストール
+
+```Bash
+rm -rf $(conda info --base)
+rm -rf ~/.conda
+
+vim ~/.bashrc
+'''
+以下で囲まれた部分の記述を削除
+# >>> conda initialize >>>
+# <<< conda initialize <<<
+'''
+```

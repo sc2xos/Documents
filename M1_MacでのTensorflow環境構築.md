@@ -5,6 +5,8 @@
 wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh
 chmod +x Miniforge3-MacOSX-arm64.sh
 sh Miniforge3-MacOSX-arm64.sh
+#起動時にbase環境で起動するのをoffにする(任意
+conda config --set auto_activate_base false
 source ~/miniforge3/bin/activate
 ```
 
